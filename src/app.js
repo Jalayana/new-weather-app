@@ -1,10 +1,21 @@
 function displayTemperature(response) {
   let temperatureElement = document.querySelector("#value");
   temperatureElement.innerHTML = Math.round(response.data.temperature.current);
-  let cityElement = document.querySelector("#city");
-  cityElement.innerHTML = response.data.city;
-}
 
+  let cityElement = document.querySelector("#city");
+  let humidityElement = document.querySelector("#humidity");
+  let windSpeedElement = document.querySelector("#wind-speed");
+  let realFeelElement = document.querySelector("#real-feel");
+  let descriptionElement = document.querySelector("#description");
+
+  cityElement.innerHTML = response.data.city;
+  humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
+  windSpeedElement.innerHTML = `${response.data.wind.speed} km/h`;
+  realFeelElement.innerHTML = `${Math.round(
+    response.data.temperature.feels_like
+  )}°C`;
+  descriptionElement.innerHTML = response.data.condition.description;
+}
 function searchCity(city) {
   let apiKey = "036afccb5b3e1756f153fo40e081f7t7";
   let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
