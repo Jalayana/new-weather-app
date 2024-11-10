@@ -5,14 +5,49 @@ body {
 }
 
 .weather-app {
-  margin: 30px auto;
+  margin: 40px auto;
   max-width: 600px;
 }
 
-ul,
-form {
+header {
+  border-bottom: 1px solid #0b121d;
+  padding: 0 0 30px 0;
+}
+.search-form-input {
+  background: #222b3b;
+  color: white;
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;
+  width: 520px;
+  padding: 10px;
+}
+
+.search-form-button {
+  background: rgba(255, 255, 255, 0.65);
+  color: black;
+  font-size: 14px;
+  font-weight: 700;
+  border: none;
+  border-radius: 6px;
+  width: 70px;
+  padding: 10px;
+  margin-left: 3px;
+}
+
+ul {
   background: #222b3b;
   box-shadow: 0 30px 50pc rgba(65, 50, 100, 0.08);
   padding: 20px;
   border-radius: 18px;
+}
+
+footer {
+  background: rgba(255, 255, 255, 0.65);
+  color: #0b121d;
+  border-top: 1px solid #0b121d;
+  border-radius: 8px;
+  padding: 10px 0 10px 0;
+  text-align: center;
+  font-size: 13px;
 }
