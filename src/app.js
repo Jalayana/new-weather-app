@@ -51,7 +51,7 @@ function formatDate(date) {
 
 function searchCity(city) {
   let apiKey = "036afccb5b3e1756f153fo40e081f7t7";
-  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
+  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}`;
 
   axios.get(apiUrl).then(displayTemperature);
 }
