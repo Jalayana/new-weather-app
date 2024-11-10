@@ -12,23 +12,26 @@
     />
     <title>Weather App</title>
   </head>
+
   <div class="weather-app">
     <body>
       <header>
-        <form class="search-form">
+        <form class="search-form" id="search-form">
           <input
             type="search"
             placeholder="Enter a city"
             required
+            id="search-form-input"
             class="search-form-input"
           />
           <input type="submit" value="Search" class="search-form-button" />
         </form>
       </header>
+
       <main>
         <div class="weather-app-data">
           <h1>
-            Beijing <br />
+            <span class="weather-app-city" id="city">Beijing</span> <br />
             <span class="weather-app-date">Wednesday, 10:51 </span>
           </h1>
           <div class="weather-app-temperature">
@@ -63,7 +66,7 @@
           </ul>
         </div>
       </main>
-    </body>
+   
     <footer>
       This project was coded by
       <a href="https://github.com/Jalayana" target="_blank">Jalayana Miller</a>,
@@ -77,4 +80,7 @@
       >
     </footer>
   </div>
+  
+  <script src="src/app.js"></script>
+  </body>
 </html>
