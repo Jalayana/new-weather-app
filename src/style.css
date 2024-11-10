@@ -1,0 +1,18 @@
+body {
+  background-color: #0b121d;
+  color: white;
+  font-family: "Host Grotesk", sans-serif;
+}
+
+.weather-app {
+  margin: 30px auto;
+  max-width: 600px;
+}
+
+ul,
+form {
+  background: #222b3b;
+  box-shadow: 0 30px 50pc rgba(65, 50, 100, 0.08);
+  padding: 20px;
+  border-radius: 18px;
+}

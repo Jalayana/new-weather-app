@@ -3,46 +3,51 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <title>Weather App</title>
   </head>
   <body>
+    <div class="weather-app">
     <header>
       <form>
         <input type="search" placeholder="Enter a city" required />
         <input type="submit" value="Search" />
       </form>
     </header>
-    <main>
+    <main>  
       <div>
         <h1>
           Beijing <br />
           Wednesday, 10:51
         </h1>
         <p>12°C <span>☀️</span></p>
-        <div>
-          <ul>
-            <li>
-              Real Feel <br />
-              10°C
-            </li>
-            <li>
-              Humidity
-              <br />
-              37%
-            </li>
-            <li>
-              Wind <br />
-              2km/h
-            </li>
-            <li>
-              Precipitation <br />
-              0%
-            </li>
-          </ul>
-        </div>
+      </div>
+      <div class="conditons">
+        <ul>
+          <li>
+            Real Feel <br />
+            10°C
+          </li>
+          <li>
+            Humidity
+            <br />
+            37%
+          </li>
+          <li>
+            Wind <br />
+            2km/h
+          </li>
+          <li>
+            Precipitation <br />
+            0%
+          </li>
+        </ul>
       </div>
     </main>
-  </body>
+    </body>
   <footer>
     This project was coded by
     <a href="https://github.com/Jalayana" target="_blank">Jalayana Miller</a>,
@@ -55,4 +60,5 @@
       >Netlify</a
     >
   </footer>
+  </div>
 </html>
