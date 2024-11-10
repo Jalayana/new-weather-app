@@ -7,8 +7,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap"
       rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
     />
     <title>Weather App</title>
   </head>
@@ -26,31 +26,39 @@
         </form>
       </header>
       <main>
-        <div>
+        <div class="weather-app-data">
           <h1>
             Beijing <br />
-            Wednesday, 10:51
+            <span class="weather-app-date">Wednesday, 10:51 </span>
           </h1>
-          <p>12°C <span>☀️</span></p>
+          <div class="weather-app-temperature">
+            <div class="weather-app-value">12</div>
+            <div class="weather-app-unit">°C</div>
+            <div class="weather-app-emoji">☀️</div>
+          </div>
         </div>
-        <div class="conditons">
+        <div class="weather-app-conditons-grid">
           <ul>
             <li>
+              <span class="material-symbols-outlined"> device_thermostat </span>
               Real Feel <br />
-              10°C
+              <strong> 10°C </strong>
             </li>
             <li>
-              Humidity
+              <span class="material-symbols-outlined">
+                humidity_percentage </span
+              >Humidity
               <br />
-              37%
+              <strong>37%</strong>
             </li>
             <li>
-              Wind <br />
-              2km/h
+              <span class="material-symbols-outlined"> air </span> Wind <br />
+              <strong>2km/h</strong>
             </li>
             <li>
+              <span class="material-symbols-outlined"> water_drop </span>
               Precipitation <br />
-              0%
+              <strong>0%</strong>
             </li>
           </ul>
         </div>
